@@ -13,26 +13,58 @@
             padding: 20px;
             border-bottom: 1px solid #ccc;
         }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .profile-image {
+            width: 200px; /* Adjust as needed */
+            height: auto;
+            border-radius: 10px; /* Optional rounded corners */
+        }
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text {
+                padding-right: 0;
+            }
+            .profile-image {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <section id="about-me" class="section">
-        <h2>About Me</h2>
-        <p>
-            I am an Assistant Professor at the University of Alabama in the Department of Geological Sciences. I like attempting to simulate complicated physical systems with numerical methods and machine learning.
-        </p>
-        <p>
-            For information on my research group, please see <a href="https://dualearth.github.io" target="_blank">Dynamic Earth Simulation Laboratory</a>.
-        </p>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>jmframe</h2>
+                <p>
+                    I am an Assistant Professor at the University of Alabama in the Department of Geological Sciences. 
+                    I like attempting to simulate complicated physical systems with numerical methods and machine learning.
+                </p>
+                <p>
+                    For information on my research group, please see 
+                    <a href="https://dualearth.github.io" target="_blank">Dynamic Earth Simulation Laboratory</a>.
+                </p>
+            </div>
+            <img src="jf_dc.jpg" alt="Jonathan M. Frame" class="profile-image">
+        </div>
     </section>
-
     <section id="cv" class="section">
         <h2>Curriculum Vitae</h2>
         <iframe src="cv.html" width="100%" height="800px"></iframe>
     </section>
 
     <footer>
-        <p>© 2024 Ridiculous Kayak. All rights reserved.</p>
+        <p>© 2025 Ridiculous Kayak. All rights reserved.</p>
     </footer>
 </body>
 </html>
